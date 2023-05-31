@@ -9,17 +9,30 @@
     <title>HTML5 Form</title>
 </head>
 <body>
-    <h1>Payment Form Example</h1>
+    <div class="Main-Outside-Box">
+    <h3>Payment Form Example</h3>
     
-        <div class="Missing-Fields">
-            <p>Some Fields are missing<p>
+    <div class="Missing-and-Card">
+        <div>
+            <p class="Missing-Fields-Text">Some Fields are missing<p>
         </div>
-        <div class="Card-Info-Text">
-            <p>Card#</p>
-            <p>CVC#</p>
-            <p>Amount</p>
-        </div>
-   
-    
+        <div class="fill-form">
+                <div class="Card-Info">
+                    <form action="/action_page.php">
+                    <label for="card">Card #</label>
+                    <input type="text" id="Card#" name="card" placeholder="xxxxxxxxxxxxxxx"></form>
+                    </div>
+                <div class="CVC-Info">
+                    <form action="/action_page.php">
+                    <label for="CVC#">CVC#</label>
+                    <input type="text" id="CVC#" name="CVC#" placeholder="0000"></form>
+                    </div>
+                <div class="Amount-Info">
+                    <form action="/action_page.php">
+                    <label for="Amount">Amount</label>
+                    <input type="text" id="Amount" name="Amount" placeholder="Amount"></form>
+                    </div>
+                </div>
+                    </div>
 </body>
 </html>
