@@ -7,38 +7,117 @@
 
 body {
     border: 1px solid lightgrey;
-    margin-left: 400px;
-    margin-right: 400px;
+    border-radius: 5px;
+    margin-left: 175px;
+    margin-right: 175px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.main-card-info {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
 h3 {
-    border: 1px solid lightgray;
-    padding: 10px 75px 10px 10px;
-    margin: 5px;
+    border-bottom: 1px solid lightgray;
+    padding: 15px 75px 15px 15px;
+    background-color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 0%;
 }
-.Missing-and-Card {
-    margin: 0px 5px 0px 5px;
-}
+
+
 
 .Missing-Fields-Text {
     color: maroon;
-    background-color: lightcoral;
+    background-color: pink;
     border-radius: 5px;
     border: 1px solid orangered;
     padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
-.Missing-Fields {
-    margin-top: 0%;
-    border: 1px solid lightgray;
-    margin-top: 0%;
-    font-family: serif;
+.Card-Fill-In {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: small;
 }
 
-.fill-form {
+.row1 {
+    font-size: small;
+    border-color: 1px solid grey;
+    margin-left: 15px;
+}
+
+.column1{
+    float:left;
+    font-size: small;
+    padding-right: 35px;
+    padding-top: 20px;
+}
+
+.column2{
+    font-size: small;
+    padding-top: 20px;
+    margin-right: 10px;
+}
+
+.ChooseCard {
+    background-color: grey;
+    margin-right: 200px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    display: flex;
+    justify-content:space-between;
+}
+
+.State-Zip-Info {
     display:flex;
-    justify-content: space-evenly;
-    margin-left: 5px;
+    justify-content:space-between;
+    padding-top: 20px;
+}
+
+.message-box {
+    padding-top: 10px;
+}
+
+.notes {
+    font-size: x-small;
+}
+
+.submit-buttons {
+    display:flex;
+    justify-content: flex-end;
+}
+
+.Cancel {
+    background-color: grey;
+    color: white;
+    font-size: 15px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 5px;
     margin-right: 5px;
+}
+
+.Send {
+    background-color: rgb(25, 118, 224);
+    color: white;
+    font-size: 15px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.submit-buttons {
+    border-bottom: 1px solid lightgray;
+    padding: 10px 20px 10px 10px;
+    margin-top: 5px;
+    background-color: whitesmoke;
 }

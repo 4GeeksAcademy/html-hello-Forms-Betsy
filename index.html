@@ -6,33 +6,126 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>HTML5 Form</title>
 </head>
 <body>
-    <div class="Main-Outside-Box">
-    <h3>Payment Form Example</h3>
+    
+    <div id=card>
+    <h3>Payment form example</h3>
     
     <div class="Missing-and-Card">
         <div>
-            <p class="Missing-Fields-Text">Some Fields are missing<p>
+            <p class="Missing-Fields-Text">Some fields are missing<p>
         </div>
-        <div class="fill-form">
+
+        <div class="Card-Fill-In">
+
                 <div class="Card-Info">
                     <form action="/action_page.php">
                     <label for="card">Card #</label>
-                    <input type="text" id="Card#" name="card" placeholder="xxxxxxxxxxxxxxx"></form>
+                    <br>
+                    <input type="text" id="Card#" name="card" size="45" placeholder="xxxxxxxxxxxxxxx"></form>
                     </div>
                 <div class="CVC-Info">
                     <form action="/action_page.php">
                     <label for="CVC#">CVC#</label>
-                    <input type="text" id="CVC#" name="CVC#" placeholder="0000"></form>
+                    <br>
+                    <input type="text" id="CVC#" name="CVC#" size="25" placeholder="0000"></form>
                     </div>
                 <div class="Amount-Info">
                     <form action="/action_page.php">
                     <label for="Amount">Amount</label>
-                    <input type="text" id="Amount" name="Amount" placeholder="Amount"></form>
+                    <br>
+                    $<input type="text" id="Amount" name="Amount" size="35" placeholder="Amount"></form>
                     </div>
+        </div>
+    </div>
+        
+    <div class="row1">
+            <div class="column1">
+            <div class="FirstName">
+                <form action="/action_page.php">
+                <label for="fname"> First Name</label>
+                <br>
+                <input type="text" id="fname" name="fname" size="50"></form>
+            </div>
+            <br>
+            <div class="City">
+                <form action="/action_page.php">
+                <label for="city"> City</label>
+                <br>
+                <input type="text" id="city" name="city" size="50"></form>
                 </div>
-                    </div>
+            <br>
+            <div>
+                <p>We Accept:</p>
+                <br>
+                <form class="ChooseCard">
+                <input type="radio" id="Amex"
+                name="ChooseCard" value="Amex">
+                <i class="fa fa-cc-amex" style="color:white"></i>
+                <input type="radio" id="Discover"
+                name="ChooseCard" value="Discover">
+                <i class="fa fa-cc-discover" style="color:white"></i>
+                <input type="radio" id="Mastercard"
+                name="ChooseCard" value="Mastercard">
+                <i class="fa fa-cc-mastercard" style="color:white"></i>
+                <input type="radio" id="Visa"
+                name="ChooseCard" value="Visa">
+                <i class="fa fa-cc-visa" style="color:white"></i>
+                </form>
+            </div>
+            </div>
+         
+                    
+            <div class="column2">
+                            <div class="LastName">
+                          <form action="/action_page.php">
+                            <label for="lname"> Last Name</label>
+                            <br>
+                            <input type="text" id="lname" name="lname" size="50"></form>
+                            </div>
+                           
+                            <div class="State-Zip-Info">
+                                <div class="State">
+                                <form action="/action_page.php">
+                                <label for=""state">State</label>
+                                <br>
+                                <select style=width:200px name="state" id="state"> 
+                                <option value="Pick a state">Pick a State</option>
+                                <option value="Florida">Florida</option>
+                                <option value="Alabama">Alabama</option>
+                                <option value="North Carolina">North Carolina</option>
+                                <option value="South Carolina">South Carolina</option>
+                                </select>
+                                </form>
+                                </div>
+                                    <div class="Postal-Code">
+                                    <form action="/action_page.php">
+                                    <label for="Postal Code"> Postal Code</label>
+                                    <br>
+                                    <input type="text" id="zip_code" name="zip_code" size="20"></form>
+                                    </div>
+                            </div> 
+                            <div class="message-box">
+                                <label action="/action_page.php">
+                                    <label for="message">Message</label>
+                                    <br>
+                                    <br>
+                                    <textarea id="message" name="message" rows="4" cols="50">
+                                        </textarea>
+                                        <br>
+                                        <p class="notes">Add any notes here.</p>
+                                        </label>
+                            </div> 
+                            </div> 
+                            </div>             
+                            
+            <div class="submit-buttons">
+                                <button type="button" class="Cancel">Cancel</button>
+                                <button type="button" class="Send">Send</button>
+                                </div>
+                            </div>                                        
 </body>
 </html>
